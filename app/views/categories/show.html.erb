@@ -1,0 +1,11 @@
+
+Category Name: <%= @category.name %>
+
+Related Posts:
+<ul>
+
+  <% @category.posts.each do |post| %>
+    <%= link_to post.title, post %>
+  <% end %>
+
+</ul>
